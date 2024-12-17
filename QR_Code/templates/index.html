@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Application</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to QR Code Application</h1>
+        
+        <p>If you don't have an account or want to log in, choose an option below:</p>
+
+        <!-- Buttons to redirect to register or sign in -->
+        <div class="buttons">
+            <a href="/register" class="btn">Register</a>
+            <a href="/signin" class="btn">Sign In</a>
+        </div>
+    </div>
+</body>
+</html>
