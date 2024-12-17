@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Application</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to QR Code Application</h1>
+        
+        <p>Select an option below:</p>
+        
+        <div class="buttons">
+            <a href="/generate" class="btn">Generate QR Code</a>
+            <a href="/read" class="btn">Read QR Code</a>
+            <a href="/user/qr_contents" class="btn">View My QR Contents</a>
+        </div>
+
+        <button id="logout" class="btn" style="margin-top: 20px;">Logout</button>
+    </div>
+
+    <script>
+        // Check if JWT token is available in localStorage
+        const token = localStorage.getItem("jwt_token");
+
+        if (!token) {
+            window.location.href = "/signin";
+        }
+
+        document.getElementById("logout").addEventListener("click", function() {
+            localStorage.removeItem("jwt_token");
+            window.location.href = "/signin";
+        });
+    </script>
+</body>
+</html>
