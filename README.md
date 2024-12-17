@@ -40,6 +40,19 @@ QR_Code/
 ```
 
 ## Installation
+Here are the packages to be installed for your project:
+
+Required Packages
+Install them using the following commands:
+pip install flask
+pip install flask-cors
+pip install qrcode[pil]
+pip install opencv-python
+pip install psycopg2
+pip install pyjwt
+pip install numpy
+pip install pillow
+
 
 ### Prerequisites
 
