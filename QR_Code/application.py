@@ -23,7 +23,7 @@ SECRET_KEY = 'this is secret key for jwt creation and validation'
 DB_HOST = 'localhost'
 DB_NAME = 'postgres'
 DB_USER = 'postgres'
-DB_PASSWORD = '123456'
+DB_PASSWORD = '123456'  #enter your postgres password
 
 # Function to get a database connection
 def get_db_connection():
